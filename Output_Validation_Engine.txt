@@ -1,0 +1,164 @@
+Test_case_1_output_index=0
+$ g++ challenge_2_del_from_last_auto_test_routine.cpp ; ./a.exe
+
+Original Data Set generated:
+Data = [43] -- index = 0
+Data = [53] -- index = 1
+Data = [22] -- index = 2
+Data = [39] -- index = 3
+Data = [10] -- index = 4
+Data = [18] -- index = 5
+Data = [12] -- index = 6
+Data = [16] -- index = 7
+Data = [16] -- index = 8
+Data = [29] -- index = 9
+
+----- Validation engine begins -----
+
+1. Deleting node at index = 0 by giving del_index = 9
+2. Deleting node at any other given index
+3. Deleting node at last index = 9 by giving del_index = 0
+
+Enter which test case to be executed: 1
+
+1. Deleting node at index = 0 by giving del_index = 9. So actual element to be deleted = 43 at index = 0
+New elements are:
+
+Data = [53] -- index = 0
+Data = [22] -- index = 1
+Data = [39] -- index = 2
+Data = [10] -- index = 3
+Data = [18] -- index = 4
+Data = [12] -- index = 5
+Data = [16] -- index = 6
+Data = [16] -- index = 7
+Data = [29] -- index = 8
+
+----Validation 0: Check number of elements----
+Expected number of elements before deletion = 9
+Obtained number of elements after deletion = 9
+Result: PASSED
+
+----Validation 1: Check Deleted element----
+Given deleted index = 9
+Expected deleted index = 9
+Result: PASSED
+
+----Validation 2: Check Data integity----
+Expected output: Values of original data set s1 must not be altered apart from deleted element.
+Result: PASSED
+
+Overall result: Deleted node successfully at index = 0 by giving del_index = 9
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test_case_2_output_user_index
+$ g++ challenge_2_del_from_last_auto_test_routine.cpp ; ./a.exe
+
+Original Data Set generated:
+Data = [43] -- index = 0
+Data = [53] -- index = 1
+Data = [22] -- index = 2
+Data = [39] -- index = 3
+Data = [10] -- index = 4
+Data = [18] -- index = 5
+Data = [12] -- index = 6
+Data = [16] -- index = 7
+Data = [16] -- index = 8
+Data = [29] -- index = 9
+
+----- Validation engine begins -----
+
+1. Deleting node at index = 0 by giving del_index = 9
+2. Deleting node at any other given index
+3. Deleting node at last index = 9 by giving del_index = 0
+
+Enter which test case to be executed: 2
+
+Enter a random index number to be deleted apart from 0 or 10: 4
+
+2. Deleting node at any other given del_index = 4
+Actual element to be deleted = 18 at index = 5
+New elements are:
+
+Data = [43] -- index = 0
+Data = [53] -- index = 1
+Data = [22] -- index = 2
+Data = [39] -- index = 3
+Data = [10] -- index = 4
+Data = [12] -- index = 5
+Data = [16] -- index = 6
+Data = [16] -- index = 7
+Data = [29] -- index = 8
+
+----Validation 0: Check number of elements----
+Expected number of elements before deletion = 9
+Obtained number of elements after deletion = 9
+Result: PASSED
+
+----Validation 1: Check Deleted element----
+Given deleted index = 4
+Expected deleted index = 5
+Result: PASSED
+
+----Validation 2: Check Data integity----
+Expected output: Values of original data set s1 must not be altered apart from deleted element.
+Result: PASSED
+
+Overall result: Deleted node successfully at index = 5 by giving del_index = 4
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Test_case_3_output_index=9
+
+$ g++ challenge_2_del_from_last_auto_test_routine.cpp ; ./a.exe
+
+Original Data Set generated:
+Data = [43] -- index = 0
+Data = [53] -- index = 1
+Data = [22] -- index = 2
+Data = [39] -- index = 3
+Data = [10] -- index = 4
+Data = [18] -- index = 5
+Data = [12] -- index = 6
+Data = [16] -- index = 7
+Data = [16] -- index = 8
+Data = [29] -- index = 9
+
+----- Validation engine begins -----
+
+1. Deleting node at index = 0 by giving del_index = 9
+2. Deleting node at any other given index
+3. Deleting node at last index = 9 by giving del_index = 0
+
+Enter which test case to be executed: 3
+
+3. Deleting node at last index = 9 by giving first index 0 as input
+
+Actual element to be deleted = 29 at index = 9
+New elements are:
+
+Data = [43] -- index = 0
+Data = [53] -- index = 1
+Data = [22] -- index = 2
+Data = [39] -- index = 3
+Data = [10] -- index = 4
+Data = [18] -- index = 5
+Data = [12] -- index = 6
+Data = [16] -- index = 7
+Data = [16] -- index = 8
+
+----Validation 0: Check number of elements----
+Expected number of elements before deletion = 9
+Obtained number of elements after deletion = 9
+Result: PASSED
+
+----Validation 1: Check Deleted element----
+Expected deleted index = 9
+Obtained deleted index = 9
+Result: PASSED
+
+----Validation 2: Check Data integity----
+Expected output: Values of original data set s1 must not be altered apart from deleted element.
+Result: PASSED
+
+Overall result: Deleted node successfully at index = 9 by giving del_index = 0
