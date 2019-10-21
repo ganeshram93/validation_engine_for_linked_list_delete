@@ -10,4 +10,4 @@ Test case 1: Delete first index by giving index = 9
 
 Test case 2: Delete any other element - user's choice
 
-Test case 3: Delete last index by giving index = 04. Attached output for reference.
+Test case 3: Delete last index by giving index = 4.
